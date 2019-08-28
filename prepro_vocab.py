@@ -70,7 +70,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # input json
-    parser.add_argument('--input_json', type=str, default='data/videodatainfo_2017.json',
+    parser.add_argument('--input_json', type=str, default='data/videodatainfo_2017_ustc.json',
                         help='msr_vtt videoinfo json')
     parser.add_argument('--info_json', default='data/info.json',
                         help='info about iw2word and word2ix')

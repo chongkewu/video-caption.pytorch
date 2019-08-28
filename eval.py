@@ -87,8 +87,9 @@ def main(opt):
     # Setup the model
     model.load_state_dict(torch.load(opt["saved_model"]))
     crit = utils.LanguageModelCriterion()
-
+    model.encoder.rnn.bidirectional = bool(model.encoder.rnn.bidirectional)
     test(model, crit, dataset, dataset.get_vocab(), opt)
+
 
 
 if __name__ == '__main__':

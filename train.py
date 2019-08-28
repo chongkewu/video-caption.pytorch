@@ -91,7 +91,7 @@ def main(opt):
         encoder = EncoderRNN(
             opt["dim_vid"],
             opt["dim_hidden"],
-            bidirectional=opt["bidirectional"],
+            bidirectional=bool(opt["bidirectional"]),
             input_dropout_p=opt["input_dropout_p"],
             rnn_cell=opt['rnn_type'],
             rnn_dropout_p=opt["rnn_dropout_p"])
