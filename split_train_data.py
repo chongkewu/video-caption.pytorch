@@ -1,5 +1,6 @@
 import json
-
+# Run this script split the training video .json to train/val/test.
+# When evaluate change the input json name.
 loader = json.load(open('./data/videodatainfo_2017_ustc.json', 'r'))
 print(loader['videos'][0]["split"])
 for ind, _ in enumerate(loader['videos'][6500:7000]):
