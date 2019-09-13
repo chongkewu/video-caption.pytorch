@@ -3,7 +3,6 @@ save*/
 results/
 *video*
 *.json
-*.ipynb
 
 !scripts/*.py
 
